@@ -154,7 +154,7 @@ client.on('message', msg => {
   });
 
 client.on('guildMemberAdd', member => {
-    var joinrole = member.guild.roles.find('name', 'MEMBER');
+    var joinrole = member.guild.roles.find('name', 'Member');
     member.addRole(joinrole);
     let channel  = member.guild.channels.find('name', '📄log');
     let memberavatar  = member.user.avatarURL
