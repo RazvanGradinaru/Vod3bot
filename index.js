@@ -163,7 +163,7 @@ client.on('guildMemberAdd', member => {
         .setColor('#FF000')
         .setThumbnail(memberavatar)
         .addField('✘ | Name: ', `${member}`)
-        .addField('✘ | Welcome', `**Bine ai venit pe server-ul Vod3RomaniaServer™. Speram sa te distrezi alaturi de noi.**`)
+        .addField('✘ | Welcome', `**Bine ai venit pe server-ul Vod3RomaniaServer™. Speram sa te distrezi alaturi de noi!**`)
         .setTimestamp()
 
         channel.sendEmbed(embed);
