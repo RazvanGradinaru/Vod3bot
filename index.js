@@ -1,9 +1,9 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = "r!"
+const prefix = "vb!"
 
 client.on('ready', () => {
-  client.user.setGame('r!help ', 'https://www.twitch.tv/csruhub')
+  client.user.setGame('vb!help ', 'https://www.twitch.tv/csruhub')
 })   
 
   client.on('message', message =>{
@@ -25,9 +25,9 @@ client.on('message', message =>{
   if ( message.content.startsWith(prefix+ "help")) {
     const embed = new Discord.RichEmbed()
     .setTitle('BOT INFO')
-    .setDescription(`•prefix --> r!
+    .setDescription(`•prefix --> vb!
 BOT COMMANDS
-• || r!mass || r!support || r!info || r!say || r!ping || r!serverinfo || r!restart || r!invite || r!botinfo || `)
+• || vb!mass || vb!support || vb!info || vb!say || vb!ping || vb!serverinfo || vb!restart || vb!invite || vb!botinfo || `)
     .setColor('RANDOM')
    message.channel.sendEmbed(embed);
   }
@@ -36,7 +36,7 @@ BOT COMMANDS
 
 client.on('message', message => {
     if (message.author.id == '350670459492368385') {
-    if (message.content.startsWith(`r!restart`)) {
+    if (message.content.startsWith(`vb!restart`)) {
             resetBot(message.channel);
     }
   }
@@ -92,7 +92,7 @@ if (message.content.startsWith(prefix + 'botinfo')) {
   const embed = new Discord.RichEmbed()
   embed.addField('BOT INFO')
   embed.addField('Name', 'Vod3', true)
-  embed.addField('Prefix', 'r!', true)
+  embed.addField('Prefix', 'vb!', true)
   embed.addField('Tag:', '6777', true)
   embed.addField('Created at:', '2018-06-13 12:52:59.660000', true)
   embed.addField('ID', '456469970600198155', true)
@@ -122,7 +122,7 @@ client.on('message', message =>{
 });    
    
   client.on('message', message => {    
-    if(message.content.startsWith('e!mass')) {
+    if(message.content.startsWith('vb!mass')) {
     if(message.author.id === "350670459492368385" ||
 message.author.id === "405337137735663618"){
        let args = message.content.split(" ").slice(1);         
@@ -136,7 +136,7 @@ member.send(reason)
 message.delete() }})}}} });
 
 client.on('message', msg => {
-    if (msg.content === 'r!invite') {
+    if (msg.content === 'vb!invite') {
       msg.channel.send('Invite **Vod3BOT** https://discordapp.com/api/oauth2/authorize?client_id=464848678583140373&permissions=8&scope=bot  :tada:');
     }
   });
@@ -148,8 +148,8 @@ client.on('message', msg => {
   });
 
 client.on('message', msg => {
-    if (msg.content === 'r!info') {
-      msg.channel.send('creatorul meu este : Vod3#1593');
+    if (msg.content === 'vb!info') {
+      msg.channel.send('creatorul meu este : **Vod3#1593**');
     }
   });
 
@@ -177,7 +177,7 @@ client.on('guildMemberRemove', member => {
         .setColor('#ff0000')
         .setThumbnail(memberavatar)
         .addField('✘ | Name: ', `${member}`)
-        .addField('✘ | Bye -', `**A iesit :sob:... Pa pa !**`)
+        .addField('✘ | Bye -', `**A iesit de pe Vod3RomaniaServer™:sob:... Pa pa !**`)
         .setTimestamp()
 
         channel.sendEmbed(embed);
