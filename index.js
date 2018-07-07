@@ -27,7 +27,15 @@ client.on('message', message =>{
     .setTitle('BOT INFO')
     .setDescription(`•prefix --> vb!
 BOT COMMANDS
-• || vb!mass || vb!support || vb!info || vb!say || vb!ping || vb!serverinfo || vb!restart || vb!invite || vb!botinfo || `)
+  || vb!mass
+  || vb!support
+  || vb!info
+  || vb!say
+  || vb!ping
+  || vb!serverinfo
+  || vb!restart
+  || vb!invite
+  || vb!botinfo `)
     .setColor('RANDOM')
    message.channel.sendEmbed(embed);
   }
@@ -142,14 +150,14 @@ client.on('message', msg => {
   });
 
 client.on('message', msg => {
-    if (msg.content === 'r!support') {
+    if (msg.content === 'vb!support') {
       msg.channel.send('support server ---> https://discord.gg/TvT7t26');
     }
   });
 
 client.on('message', msg => {
     if (msg.content === 'vb!info') {
-      msg.channel.send('creatorul meu este : **Vod3#1593**');
+      msg.channel.send('creatorul meu este : Vod3#1593');
     }
   });
 
